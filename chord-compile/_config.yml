@@ -1,0 +1,19 @@
+title: Chords
+email: chords@frazerseymour.com
+description: A Jekyll site for rendering Markdown lyrics and chords into pretty HTML.
+baseurl: ""
+url: "http://chords.frazerseymour.com"
+
+# Build settings
+markdown: kramdown
+collections:
+    chords:
+        output: true
+defaults:
+    -
+        scope:
+            path: ""
+            type: "chords"
+        values:
+            capo: 0
+            tuning: EADGBE
