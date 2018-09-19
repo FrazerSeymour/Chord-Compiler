@@ -15,5 +15,8 @@ defaults:
             path: ""
             type: "chords"
         values:
+            layout: chordsheet
             capo: 0
             tuning: EADGBE
+exclude:
+    - _chords/example.md
