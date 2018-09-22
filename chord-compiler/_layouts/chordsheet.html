@@ -4,4 +4,4 @@ layout: main
 <h1>{{ page.artist }} - {{ page.title }}</h1>
 <h2>{{ page.album }}</h2>
 
-{{ content }}
+{{ content | remove: "^" }}
