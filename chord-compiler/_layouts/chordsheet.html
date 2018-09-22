@@ -8,6 +8,12 @@ layout: main
     <h3>(<a href="{{ page.link }}" alt="Link to {{page.title}} by {{ page.artist }}.">Listen</a>)</h3>
   </header>
 
+  <section class="tuning">
+    <p><strong>Key:</strong> {{ page.key }}</p>
+    <p><strong>Capo:</strong> {{ page.capo }}</p>
+    <p><strong>Tuning:</strong> {{ page.tuning}}</p>
+  </section>
+
   <section class="content">
 {{ content | remove: "^" }}
   </section>
