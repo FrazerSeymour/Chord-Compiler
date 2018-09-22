@@ -9,11 +9,11 @@ Now I can hand-format chords the way I want them, update how they are displayed 
 ## Current Features
 
 - Dockerized for your convenience.
+- Pretty formatting of songs.
 
 ## Future Features
 
 - Indexing of songs.
-- Pretty mobile-first formatting of songs.
 - Improved search and organization of songs.
 - In-browser transpose functionality.
 - In-browser chord display functionality.
