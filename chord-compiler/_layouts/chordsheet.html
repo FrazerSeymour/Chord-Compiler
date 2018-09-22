@@ -1,7 +1,14 @@
 ---
 layout: main
 ---
-<h1>{{ page.artist }} - {{ page.title }}</h1>
-<h2>{{ page.album }}</h2>
+<article class="song">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <h2>By <span class="artist">{{ page.artist }}</span>, from <span class="album">{{ page.album }}</span></h2>
+    <h3>(<a href="{{ page.link }}" alt="Link to {{page.title}} by {{ page.artist }}.">Listen</a>)</h3>
+  </header>
 
+  <section class="content">
 {{ content | remove: "^" }}
+  </section>
+</article>
