@@ -6,6 +6,7 @@ url: "http://chords.frazerseymour.com"
 
 # Build settings
 markdown: kramdown
+highlighter: none
 collections:
     chords:
         output: true
