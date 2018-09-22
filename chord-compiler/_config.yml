@@ -17,7 +17,12 @@ defaults:
             type: "chords"
         values:
             layout: chordsheet
-            capo: 0
+            title: "Song Title"
+            artist: "Song Artist"
+            album: "Song Album"
+            link: https://open.spotify.com
+            key: A
+            capo: "-"
             tuning: EADGBE
 exclude:
     - _chords/example.md
