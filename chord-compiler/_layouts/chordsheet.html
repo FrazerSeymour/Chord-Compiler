@@ -1,20 +1,31 @@
----
-layout: main
----
-<article class="song">
-  <header>
-    <h1>{{ page.title }}</h1>
-    <h2>By <strong>{{ page.artist }}</strong>, from <em>{{ page.album }}</em></h2>
-    <h3>(<a href="{{ page.link }}" alt="Link to {{page.title}} by {{ page.artist }}.">Listen</a>)</h3>
-  </header>
+<!doctype html>
+<html lang="">
+  <head>
+    {% include header.html %}
+    <title>{{ page.artist }} - {{ page.title }}</title>
+    <link rel="stylesheet" href="{{ baseurl }}/css/chordsheet.css">
+  </head>
 
-  <section class="tuning">
-    <p><strong>Key:</strong> {{ page.key }}</p>
-    <p><strong>Capo:</strong> {{ page.capo }}</p>
-    <p><strong>Tuning:</strong> {{ page.tuning}}</p>
-  </section>
+  <body>
+    <article class="song">
+      <header>
+        <h1>{{ page.title }}</h1>
+        <h2>By <strong>{{ page.artist }}</strong>, from <em>{{ page.album }}</em></h2>
+        <h3>(<a href="{{ page.link }}" alt="Link to {{page.title}} by {{ page.artist }}.">Listen</a>)</h3>
+      </header>
 
-  <section class="content">
-{{ content | remove: "^" }}
-  </section>
-</article>
+      <section class="tuning">
+        <p><strong>Key:</strong> {{ page.key }}</p>
+        <p><strong>Capo:</strong> {{ page.capo }}</p>
+        <p><strong>Tuning:</strong> {{ page.tuning}}</p>
+      </section>
+
+      <section class="content">
+        {{ content | remove: "^" }}
+      </section>
+    </article>
+
+    {% include footer.html %}
+  </body>
+
+</html>
