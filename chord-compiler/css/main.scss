@@ -19,15 +19,13 @@
 body {
   background-color: #fbfefb;
   margin: 0;
-
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 article.song {
-  max-width: calc(100% - 2em);
+  margin: 0 auto;
   padding: 0 1em;
+  width: min-content;
+  max-width: calc(100% - 2em);
 
   header {
     @extend .serif;
