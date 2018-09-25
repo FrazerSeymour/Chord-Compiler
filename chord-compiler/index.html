@@ -1,0 +1,12 @@
+---
+layout: main
+---
+
+{% assign sections = site.chords | group_by_exp: "song", "song.artist | upcase | remove: ' ' | remove_first: 'THE' | slice: 0" %}
+
+{% for section in sections %}
+  <h2>{{ section.name }}</h2>
+  {% for song in section.items %}
+  <h3><a href="{{ song.url }}">{{ song.artist}} - {{ song.title }}</a></h3>
+  {% endfor %}
+{% endfor %}
