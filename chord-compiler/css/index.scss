@@ -1,0 +1,35 @@
+---
+---
+
+@import "typography";
+@import url($fontUrl);
+
+header {
+  h1 {
+    @extend .serif;
+    text-align: center;
+  }
+}
+
+article.songIndex {
+  columns: 3;
+  column-fill: balance;
+
+  h2, h3 {
+    @extend .serif;
+    margin: 0 1em;;
+    width: available;
+  }
+
+  h2 {
+    margin-top: 1em;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    font-weight: normal;
+  }
+}
