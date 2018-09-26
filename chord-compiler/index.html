@@ -1,5 +1,6 @@
 ---
 layout: main
+title: Song Index
 ---
 
 {% assign sections = site.chords | group_by_exp: "song", "song.artist | upcase | remove: ' ' | remove_first: 'THE' | slice: 0" %}
