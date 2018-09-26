@@ -3,6 +3,10 @@ layout: main
 title: Song Index
 ---
 
+<header>
+  <h1>Song Index</h1>
+</header>
+
 {% assign sections = site.chords | group_by_exp: "song", "song.artist | upcase | remove: ' ' | remove_first: 'THE' | slice: 0" %}
 
 {% for section in sections %}
