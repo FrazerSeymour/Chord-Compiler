@@ -12,13 +12,12 @@ header {
 }
 
 article.songIndex {
-  columns: 3;
+  column-width: 500px;
   column-fill: balance;
 
   h2, h3 {
     @extend .serif;
     margin: 0 1em;;
-    width: available;
   }
 
   h2 {
