@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-    chord-compiler:
+    songbook:
         image: jekyll/jekyll
         command: jekyll serve
         volumes:
-            - "./chord-compiler/:/srv/jekyll"
-            - "${CHORD_PATH}/:/srv/jekyll/_chords"
+            - "./songbook/:/srv/jekyll"
+            - "${CHORD_PATH}/:/srv/jekyll/_songs"
         ports:
             - "4000:4000"

@@ -8,7 +8,7 @@ title: Song Index
 </header>
 
 <article class="songIndex">
-  {% assign sections = site.chords | group_by_exp: "song", "song.artist | upcase | remove: ' ' | remove_first: 'THE' | slice: 0" %}
+  {% assign sections = site.songs | group_by_exp: "song", "song.artist | upcase | remove: ' ' | remove_first: 'THE' | slice: 0" %}
   {% for section in sections %}
     <h2>{{ section.name }}</h2>
     {% for song in section.items %}
