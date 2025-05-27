@@ -17,3 +17,5 @@ Now I can hand-format chords the way I want them, update how they are displayed 
 - Improved search and organization of songs.
 - In-browser transpose functionality.
 - In-browser chord display functionality.
+
+:-)
